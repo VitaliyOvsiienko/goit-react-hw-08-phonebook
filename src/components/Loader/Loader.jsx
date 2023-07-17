@@ -1,19 +1,65 @@
-import { FidgetSpinner } from 'react-loader-spinner';
+import { RotatingLines } from 'react-loader-spinner';
+import { ThreeDots } from "react-loader-spinner";
 import { Wrap } from './Loader.styled';
 
-export const Loader = () => {
+export const MainLoader = () => {
     return (
         <Wrap>
-            <FidgetSpinner
+            <RotatingLines
+                strokeColor="#1976d2"
+                strokeWidth="5"
+                animationDuration="0.75"
+                width="96"
                 visible={true}
-                height="80"
-                width="80"
-                ariaLabel="dna-loading"
-                wrapperStyle={{}}
-                wrapperClass="dna-wrapper"
-                ballColors={['#ff0000', '#00ff00', '#0000ff']}
-                backgroundColor="#F4442E"
             />
         </Wrap>
+    )
+};
+
+export const AddLoader = () => {
+    return (
+        <>
+            <ThreeDots 
+                height="30" 
+                width="30" 
+                radius="5"
+                color="#ffffff" 
+                ariaLabel="three-dots-loading"
+                wrapperStyle={{}}
+                wrapperClassName=""
+                visible={true}/>
+        </>
+    )
+};
+
+export const RemoveLoader = () => {
+    return (
+        <>
+            <ThreeDots 
+                height="20" 
+                width="20" 
+                radius="3"
+                color="#1976d2" 
+                ariaLabel="three-dots-loading"
+                wrapperStyle={{}}
+                wrapperClassName=""
+                visible={true}/>
+        </>
+    )
+};
+
+export const LogoutLoader = () => {
+    return (
+        <>
+            <ThreeDots 
+                height="15" 
+                width="15" 
+                radius="2"
+                color="#1976d2" 
+                ariaLabel="three-dots-loading"
+                wrapperStyle={{}}
+                wrapperClassName=""
+                visible={true}/>
+        </>
     )
 };
