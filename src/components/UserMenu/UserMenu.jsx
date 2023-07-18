@@ -30,8 +30,6 @@ export const UserMenu = () => {
     const dispatch = useDispatch();
     const authOperation = useSelector(selectIsAuthLoading);
 
-    // console.log('authOperation', authOperation)
-
     return (
         <>
             <User>

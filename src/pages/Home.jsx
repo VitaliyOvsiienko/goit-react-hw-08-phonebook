@@ -6,7 +6,7 @@ import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { useAuth } from "hooks";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
-// import imgBgd from '../../src/images/bgd.jpg';
+import imgBgd from './../images/bdg.jpg'
 
 const theme = createTheme({
     palette: {
@@ -47,7 +47,7 @@ const Home = () => {
                 <title>Home</title>
             </Helmet>
             <Box conponent='main' sx={{
-                // backgroundImage: `linear-gradient(rgba(47, 68, 158, 0.3), rgba(47, 48, 58, 0.3)), url(${imgBgd})`,
+                backgroundImage: `linear-gradient(rgba(47, 68, 158, 0.3), rgba(47, 48, 58, 0.3)), url(${imgBgd})`,
                
                 backgroundRepeat: 'no-repeat',
                 backgroundColor: 'rgba(0, 0, 50, 0.30 )',
@@ -58,7 +58,7 @@ const Home = () => {
                 paddingTop: 10,
                 paddingBottom: 10,
                 textAlign: 'center',
-                minHeight: '80vh',
+                minHeight: '69vh',
                 }}>
                     <Typography
                     sx={{
@@ -77,7 +77,7 @@ const Home = () => {
                         marginLeft='auto'
                         marginRight='auto'
                         >
-                        Save all your <br/>contacts in
+                        Store all your <br/>contacts in
                     </Typography>
                     <Typography
                     sx={{

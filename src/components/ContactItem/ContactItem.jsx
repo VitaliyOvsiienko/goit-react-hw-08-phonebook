@@ -4,18 +4,14 @@ import { deleteContact } from 'redux/contacts/operations';
 import { toast } from 'react-hot-toast';
 import Button from '@mui/material/Button';
 import DeleteIcon from '@mui/icons-material/Delete';
-import EditIcon from '@mui/icons-material/Edit';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
-import { useState } from 'react';
-import { EditModal } from 'components/Modal/Modal';
 import { selectIsLoading } from 'redux/contacts/selectors';
 import { RemoveLoader } from 'components/Loader';
 
 
 export const ContactItem = ({ id, name, number }) => {
     const dispatch = useDispatch();
-    const [isShowModal, setIsShowModal] = useState(false);
     const operation = useSelector(selectIsLoading);
 
     const handleDelete = async () => {
@@ -27,7 +23,6 @@ export const ContactItem = ({ id, name, number }) => {
         } 
     };
 
-    const toggleModal = () => setIsShowModal(prev => !prev);
 
     return (
         <>
@@ -47,7 +42,6 @@ export const ContactItem = ({ id, name, number }) => {
                                 md: 'left'
                             }
                         }} 
-                        // textAlign='center'
                         fontWeight='500'
                         color='#212121'
                     >
@@ -66,7 +60,6 @@ export const ContactItem = ({ id, name, number }) => {
                                 md: 'left'
                             }
                         }}
-                        // textAlign='center'
                         color='#757575'
                         paragraph
                         >
@@ -86,28 +79,8 @@ export const ContactItem = ({ id, name, number }) => {
                         {operation === id ? 'Deleting...' : 'Delete'}
                         </Button>
                     </Grid>
-                <Grid item xs={6}  md >
-                        <Button
-                        type="button"
-                        variant="contained"
-                        aria-label="edit"
-                        size="small"
-                        color="primary"
-                        startIcon={<EditIcon />}
-                        onClick={toggleModal}>
-                        Edit
-                        </Button>
-                    </Grid>
 
             </Grid>
-            {isShowModal &&
-                <EditModal
-                onClose={toggleModal}
-                id={id}
-                name={name}
-                number={number}
-                isOpen={isShowModal} />
-            }
         </>
     );
 };

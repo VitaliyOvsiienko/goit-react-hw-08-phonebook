@@ -71,7 +71,7 @@ const Contacts = () => {
           paragraph
           align="center"
         >
-          There are no contacts yet
+          Contact list is empty
         </Typography>
       ) : (
         <ContactList />

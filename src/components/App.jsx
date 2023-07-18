@@ -33,11 +33,13 @@ const theme = createTheme({
             fontFamily: 'Ubuntu',
         },
   },
-  palette: {
-        primary: {
-            main: '#1976d2',
-        },
-  },
+
+palette: {
+primary: {
+    main: '#2196F3',
+},
+},
+
   breakpoints: {
     values: {
         xs: 300,
@@ -69,7 +71,9 @@ export const App = () => {
             <Route path='/register' element={<PublicRoute><RegisterPage /></PublicRoute>} />
             <Route path='/login' element={<PublicRoute><LoginPage /></PublicRoute>} />
             <Route path='/contacts' element={<PrivateRoute><ContactsPage /></PrivateRoute>} />
+
             <Route path='*' element={<ErrorPage />} />
+         
           </Route>
         </Routes>)}
     </ThemeProvider>

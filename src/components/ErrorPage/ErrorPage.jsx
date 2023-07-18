@@ -1,6 +1,7 @@
 import React from 'react';
 import { Image } from './ErrorPage.styled';
-// import imgError from '../../images/page-404.png';
+
+import imgError from '../../images/page-404.png';
 
 
 const ErrorPage = () => {

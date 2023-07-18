@@ -2,7 +2,7 @@
 /* bring in normalize.css styles */
 
 :root {
-  --accent-color: #1976d2;
+  --accent-color: #2196f3;
   --primary-text-color: #d9d9dc;
   --secondary-text-color: #212121;
 
@@ -47,7 +47,6 @@ ul,
 ol {
   margin: 0;
   padding: 0;
-  /* list-style: none; */
 }
 
 img {
