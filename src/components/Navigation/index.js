@@ -1,1 +1,1 @@
-import * from './Navigation';
+export * from './Navigation';

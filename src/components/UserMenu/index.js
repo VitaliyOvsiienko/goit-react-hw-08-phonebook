@@ -1,1 +1,1 @@
-import * from './UserMenu';
+export * from './UserMenu';

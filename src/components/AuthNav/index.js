@@ -1,1 +1,1 @@
-import * from './AuthNav'
+export * from './AuthNav';
