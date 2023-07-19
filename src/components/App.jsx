@@ -1,6 +1,3 @@
-import '@fontsource/ubuntu/400.css';
-import '@fontsource/ubuntu/500.css';
-import '@fontsource/ubuntu/700.css';
 import { useDispatch } from 'react-redux';
 import { lazy, useEffect } from 'react';
 import { Route, Routes } from 'react-router-dom';
@@ -12,6 +9,9 @@ import { MainLoader } from './Loader';
 import PublicRoute from './PublicRoute';
 import PrivateRoute from './PrivateRoute';
 import { ThemeProvider, createTheme } from '@mui/material';
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 
 
 const HomePage = lazy(() => import('../pages/Home'));
@@ -24,13 +24,13 @@ const ContactsPage = lazy(() => import('../pages/Contacts'));
 const theme = createTheme({
     typography: {
         button: {
-            fontFamily: 'Ubuntu',
+            fontFamily: 'Roboto',
         },
         h1: {
-            fontFamily: 'Ubuntu',
+            fontFamily: 'Roboto',
         },
         h2: {
-            fontFamily: 'Ubuntu',
+            fontFamily: 'Roboto',
         },
   },
 
@@ -50,8 +50,6 @@ primary: {
     },
     },
 });
-
-
 
 
 export const App = () => {

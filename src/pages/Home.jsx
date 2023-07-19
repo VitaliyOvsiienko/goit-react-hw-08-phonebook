@@ -1,17 +1,17 @@
 import { Box, Button, ThemeProvider, Typography, createTheme } from "@mui/material";
-import '@fontsource/ubuntu/400.css';
-import '@fontsource/ubuntu/500.css';
-import '@fontsource/ubuntu/700.css';
 import KeyboardArrowRightIcon from '@mui/icons-material/KeyboardArrowRight';
 import { useAuth } from "hooks";
 import { useNavigate } from "react-router-dom";
 import { Helmet } from "react-helmet";
+import '@fontsource/roboto/400.css';
+import '@fontsource/roboto/500.css';
+import '@fontsource/roboto/700.css';
 import imgBgd from './../images/bdg.jpg'
 
 const theme = createTheme({
     palette: {
         primary: {
-            main: '#1976d2',
+            main: '#2196F3',
         },
         secondary: {
             main: '#d9d9dc',
@@ -19,7 +19,7 @@ const theme = createTheme({
     },
     typography: {
         button: {
-            fontFamily: 'Ubuntu',
+            fontFamily: 'Roboto',
         },
     },
     breakpoints: {
@@ -71,8 +71,8 @@ const Home = () => {
                     }}
                         variant="h2"
                         fontWeight='500'
-                        fontFamily='Ubuntu'
-                        color='secondary'
+                        fontFamily='Roboto'
+                        color='#ffffff'
                         maxWidth='480px'
                         marginLeft='auto'
                         marginRight='auto'
@@ -92,7 +92,7 @@ const Home = () => {
                         }}}
                         variant="h1"
                         fontWeight='700'
-                        fontFamily='Ubuntu'
+                        fontFamily='Roboto'
                         color='#ffffff'
                         maxWidth='480px'
                         marginLeft='auto'

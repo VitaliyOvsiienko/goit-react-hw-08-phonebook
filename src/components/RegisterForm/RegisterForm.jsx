@@ -58,7 +58,7 @@ export function RegisterForm() {
                 <Avatar sx={{ m: 1, bgcolor: '#2196F3' }}>
                     <LockPersonOutlinedIcon />
                 </Avatar>
-                <Typography component="h1" variant="h5" fontFamily= 'Ubuntu'>
+                <Typography component="h1" variant="h5" fontFamily= 'Roboto'>
                     Sign up
                 </Typography>
                 <Box component="form" autoComplete="off" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
