@@ -3,6 +3,7 @@ import { Outlet } from "react-router-dom";
 import { Toaster } from "react-hot-toast";
 import { Bar } from "components/AppBar/AppBar";
 import { Container } from "@mui/material";
+import { Footer } from "components/Footer/Footer";
 
 
 const Layout = () => {
@@ -12,7 +13,8 @@ const Layout = () => {
             <Bar />
                 <Suspense fallback={null}>
                     <Outlet/>
-                </Suspense>
+            </Suspense>
+            < Footer/>
             <Toaster position="top-right" reverseOrder={false} />
         </Container>
         
